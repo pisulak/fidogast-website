@@ -1,0 +1,111 @@
+body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.uc-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.uc-info {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 1em var(--clr-shadow-dark);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.uc-info h1 {
+    font-variant: small-caps;
+    text-align: center;
+    color: var(--clr-neutral-dark);
+}
+
+.uc-info img {
+    margin-inline: auto;
+    max-width: 150px;
+}
+
+.uc-info button {
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    border-radius: 100vmax;
+    padding: 1em 2.5em;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-button);
+    line-height: 1;
+    background-color: var(--clr-accent-default);
+    box-shadow: 0 1em 1em -1em var(--clr-accent-dark);
+    text-align: center;
+    margin-block: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-neutral-light);
+}
+
+
+
+
+:root {
+    /* colors */
+  
+    --clr-primary-light: hsl(228, 48%, 41%);
+    --clr-primary-default: hsl(228, 38%, 17%);
+    --clr-accent-lighter: hsl(202, 100%, 90%);
+    --clr-accent-light: hsl(202, 100%, 65%);
+    --clr-accent-default: hsl(202, 100%, 44%);
+    --clr-accent-dark: hsl(202, 100%, 32%);
+    --clr-neutral-light: hsl(0, 0%, 100%);
+    --clr-neutral-semi-dark: hsl(232, 12%, 23%);
+    --clr-neutral-dark: hsl(232, 12%, 13%);
+    --clr-shadow-light: hsla(0, 0%, 25%, 0.15);
+    --clr-shadow-neutral: hsla(0, 0%, 0%, 0.25);
+    --clr-shadow-dark: hsla(0, 0%, 0%, 0.5);
+  
+    /* font options */
+  
+    --font-size-200: .5rem;
+    --font-size-250: .65rem;
+    --font-size-300: .875rem;
+    --font-size-400: .9375rem;
+    --font-size-500: 1rem;
+    --font-size-600: 1.25rem;
+    --font-size-700: 1.875rem;
+    --font-size-800: 2.5rem;
+    --font-size-900: 3.5rem;
+    
+    --font-size-body: var(--font-size-400);
+    --font-size-primary-heading: var(--font-size-800);
+    --font-size-secondary-heading: var(--font-size-700);
+    --font-size-nav: var(--font-size-500);
+    --font-size-button: var(--font-size-300);
+  
+    --font-family-primary: 'Be Vietnam Pro', sans-serif;
+    --font-family-body: var(--font-family-primary);
+    --font-family-heading: var(--font-family-primary);
+  
+    --font-weight-regular: 400;
+    --font-weight-semi: 500;
+    --font-weight-bold: 700;
+  
+    /* size */
+  
+    --size-100: .25rem;
+    --size-200: .5rem;
+    --size-300: .75rem;
+    --size-400: 1rem;
+    --size-500: 1.5rem;
+    --size-600: 2rem;
+    --size-700: 3rem;
+    --size-800: 4rem;
+    --size-900: 5rem;
+    --size-950: 6rem;
+}
